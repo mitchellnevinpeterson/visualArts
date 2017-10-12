@@ -1,0 +1,214 @@
+/*Reset all font box marigin-padding*/
+* {
+	font-family: 'Lato', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+/*Select all Line breaks and Adjust color and width*/
+hr {
+	border: 1px solid #c79852;
+	margin: 3% auto;
+	width: 7%;
+}
+/*Select all Navigation and add padding-margin*/
+nav {
+	margin: 0 1%;
+	padding: 1% 5%;
+}
+/*Select all div tags with in the nav tag and change the display*/
+nav > div {
+	display: inline-block;
+}
+/*Select all a tags with in the nav tag and change the text*/
+nav > div > a {
+	color: #464646;
+	font-size: 16px;
+	font-weight: bold;
+	text-decoration: none;
+}
+/*Select the last child tag inside the nav tag and float right*/
+nav > div:last-child {
+	float: right;
+}
+/*Removing the border from the search bar on the top navigation*/
+nav input {
+	border: none;
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+}
+/*Adding a padding between the footer main section*/
+section {
+	padding-bottom: 50px;
+}
+/*Aligning the header info and image to center and adjusting the width and margin*/
+header {
+	margin: 0 auto;
+	text-align: center;
+	width: 80%;
+}
+/*Adjusting the header image size and shape*/
+header img {
+	border-radius: 50%;
+	height: 75px;
+	width: 90px;
+}
+/*Changing the text appearance of h1 inside of the header*/
+header h1 {
+	color: #242424;
+	font-family: 'Lora', serif;
+	font-size: 60px;
+	letter-spacing: -1px;
+	line-height: 60px;
+	margin: 1% 0; 
+}
+/*Adjusting the appearance of the h2 tag inside the header tag*/
+header h2 {
+	color: #5f5f5f;
+	font-size: 20px;
+	font-weight: normal;
+	margin: 5% 0 3%;
+}
+/*adjusting p tags with in the header*/
+header p {
+	font-size: 16px;
+	margin: 3% 0;
+}
+/*Selecting all div tags that have a parent of section tag*/
+section > div {
+	margin: 0 auto;
+	text-align: center;
+	width: 80%;
+}
+/*Selecting all p tags with in a div tag that has a parent tag of section*/
+section > div p {
+	color: #565656;
+	font-size: 16px;
+	line-height: 30px;
+	padding: 0 15%;
+	margin: 3% 0;
+	text-align: left;
+}
+/*Selecting the class of personal-quote*/
+.personal-quote {
+	font-family: 'petit Formal Script', cursive;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 36px;
+	margin: 0 auto;
+	text-align: center;
+	width: 60%;
+}
+/*selecting div tag of class img-wrap and adjusting the height of the box model*/
+.img-wrap {
+	height: 450px;
+}
+/*floating left all images within div class img-wrap*/
+.img-wrap img {
+	float: left;
+}
+/*Adding margin to first image within the class img-wrap*/
+.img-wrap img:first-child {
+	margin-left: 9%;
+}
+/*Selecting the second and third child img tags within the class img-wrap*/
+.img-wrap img:nth-child(n+2) {
+	margin-left: 7px;
+}
+/*Selecting the 3 and last img only within the class img-wrap*/
+.img-wrap img:last-child {
+	margin-top: 7px;
+}
+/*centering and adjusting the margin of the section footer*/
+section > footer {
+	margin: 0 auto;
+	text-align: center;
+	width: 60%;
+}
+/*Changing the color of the text 325 likes*/
+section > footer > div {
+	color:#565656;
+}
+/*changing the color of the heart icon to red and adjusting its margin for positioning*/
+footer .fa-heart {
+	color: #E04F4A;
+	margin-bottom: 3%;
+}
+/*adjusting the color, size, position, etc of the describe yourself box*/
+footer textarea {
+	background-color: #fff;
+	background-image: none;
+	border: 1px solid #ccc;
+	border-color: #e5e5e5;
+	border-radius: 4px;
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+	color: #555;
+	font-size: 14px;
+	line-height: 1.42857143;
+	padding: 6px 12px;
+	width: 100%;
+}
+/*Aligning all buttons below the describe yourself box to the left*/
+.button-group {
+	text-align: left;
+}
+/*changing colors of the buttons below text area*/
+.button-group button {
+	border: none;
+	background: white;
+	color: #565656;
+	font-size: 12px;
+	padding: 0 5px 0 0;
+}
+/*Positioning the last button called post comment to the right*/
+.button-group button:last-child {
+	float:right;
+	padding: 0;
+}
+/*adding the hover cursor change to the buttons below text area*/
+.button-group button:hover {
+	color: #5e5e5e;
+	cursor: pointer;
+	transition: 0.3s all ease-in-out;
+}
+/*adjusting the color, height, and position of the body footer*/
+body > footer {
+	background: #F8F9FD;
+	height: 200px;
+	padding: 0 20%;
+	position: relative;
+}
+/*postitioning and changing the display of the article hyperlinks*/
+.previous-article, .next-article {
+	display: inline-block;
+	position: relative;
+	width: 50%;
+}
+
+.previous-article {
+	left: 20%;
+	position: absolute;
+}
+.previous-buttom {
+	text-align: left;
+}
+
+.next-article {
+	position: absolute;
+	right: 20%;
+}
+.next-button {
+	text-align: right;
+}
+.previous-button, .next-button {
+	margin: 10% 0;
+}
+
+.previous-button a, .next-button a {
+	color: #434345;
+	font-weight: bold;
+	margin: 3% 0;
+	text-decoration: none;
+}
+.previous-button p, .next-button p {
+	font-weight: normal;
+	margin: 3% 0;
+}
